@@ -1,10 +1,10 @@
 #import <XCTest/XCTest.h>
 
-@interface FMWKTemplateTests : XCTestCase
+@interface ECLibraryTests : XCTestCase
 
 @end
 
-@implementation FMWKTemplateTests
+@implementation ECLibraryTests
 
 - (void)setUp {
 	[super setUp];

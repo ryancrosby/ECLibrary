@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE101C7B1AE417F300BA8F5F"
-               BuildableName = "FMWKTemplate.framework"
-               BlueprintName = "FMWKTemplate-Mac"
-               ReferencedContainer = "container:FMWKTemplate.xcodeproj">
+               BuildableName = "ECLibrary.framework"
+               BlueprintName = "ECLibrary-Mac"
+               ReferencedContainer = "container:ECLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE101C861AE417F300BA8F5F"
-               BuildableName = "FMWKTemplateTests-Mac.xctest"
-               BlueprintName = "FMWKTemplateTests-Mac"
-               ReferencedContainer = "container:FMWKTemplate.xcodeproj">
+               BuildableName = "ECLibraryTests-Mac.xctest"
+               BlueprintName = "ECLibraryTests-Mac"
+               ReferencedContainer = "container:ECLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE101C861AE417F300BA8F5F"
-               BuildableName = "FMWKTemplateTests-Mac.xctest"
-               BlueprintName = "FMWKTemplateTests-Mac"
-               ReferencedContainer = "container:FMWKTemplate.xcodeproj">
+               BuildableName = "ECLibraryTests-Mac.xctest"
+               BlueprintName = "ECLibraryTests-Mac"
+               ReferencedContainer = "container:ECLibrary.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE101C7B1AE417F300BA8F5F"
-            BuildableName = "FMWKTemplate.framework"
-            BlueprintName = "FMWKTemplate-Mac"
-            ReferencedContainer = "container:FMWKTemplate.xcodeproj">
+            BuildableName = "ECLibrary.framework"
+            BlueprintName = "ECLibrary-Mac"
+            ReferencedContainer = "container:ECLibrary.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE101C7B1AE417F300BA8F5F"
-            BuildableName = "FMWKTemplate.framework"
-            BlueprintName = "FMWKTemplate-Mac"
-            ReferencedContainer = "container:FMWKTemplate.xcodeproj">
+            BuildableName = "ECLibrary.framework"
+            BlueprintName = "ECLibrary-Mac"
+            ReferencedContainer = "container:ECLibrary.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE101C7B1AE417F300BA8F5F"
-            BuildableName = "FMWKTemplate.framework"
-            BlueprintName = "FMWKTemplate-Mac"
-            ReferencedContainer = "container:FMWKTemplate.xcodeproj">
+            BuildableName = "ECLibrary.framework"
+            BlueprintName = "ECLibrary-Mac"
+            ReferencedContainer = "container:ECLibrary.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
