@@ -1,0 +1,6 @@
+framework module ECLibrary {
+  umbrella header "ECLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

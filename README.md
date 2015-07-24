@@ -1,11 +1,29 @@
 # ECLibrary
 
-Type here your framework's description
+[![CI Status](http://img.shields.io/travis/Ryan Crosby/ECLibrary.svg?style=flat)](https://travis-ci.org/Ryan Crosby/ECLibrary)
+[![Version](https://img.shields.io/cocoapods/v/ECLibrary.svg?style=flat)](http://cocoapods.org/pods/ECLibrary)
+[![License](https://img.shields.io/cocoapods/l/ECLibrary.svg?style=flat)](http://cocoapods.org/pods/ECLibrary)
+[![Platform](https://img.shields.io/cocoapods/p/ECLibrary.svg?style=flat)](http://cocoapods.org/pods/ECLibrary)
 
-## Getting Started
+## Usage
 
-To start building the framework, you must install the required dependencies, xctool and cmake. We recommend using Homebrew to install these two tools.
-Once you have the dependencies you should clone this repository and then run script/bootstrap. This will automatically pull down and install any other dependencies.
-Note that the bootstrap script automatically installs some libraries that ECLibrary relies upon, using Homebrew. If you want this behavior, please make sure you have Homebrew installed.
-To develop ECLibrary on its own, open the ECLibrary.xcworkspace file.
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Requirements
+
+## Installation
+
+ECLibrary is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "ECLibrary"
+```
+
+## Author
+
+Ryan Crosby, ryan.s.crosby@gmail.com
+
+## License
+
+ECLibrary is available under the MIT license. See the LICENSE file for more info.
