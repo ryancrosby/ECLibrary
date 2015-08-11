@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ECLibrary"
-  s.version          = "0.1.0.beta"
+  s.version          = "0.1.beta"
   s.summary          = "A short description of ECLibrary."
   s.description      = <<-DESC
                        A grab bag of utility function, classes, structs, etc.... that
@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'ECLibrary' => ['Pod/Assets/*.png']
-  }
+  # s.resource_bundles = {
+  #   'ECLibrary' => ['Pod/Assets/*.png']
+  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
