@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ECLibrary"
-  s.version          = "0.1.beta"
+  s.version          = "0.2.beta"
   s.summary          = "A short description of ECLibrary."
   s.description      = <<-DESC
                        A grab bag of utility function, classes, structs, etc.... that
@@ -34,6 +34,5 @@ Pod::Spec.new do |s|
   # }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'QuartzCore'
 end
