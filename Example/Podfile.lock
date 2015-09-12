@@ -1,29 +1,29 @@
 PODS:
-  - ECLibrary (0.1.0)
+  - ECLibrary (0.2.beta)
   - FBSnapshotTestCase (1.8.1)
-  - Nimble (0.4.2)
-  - Nimble-Snapshots (0.4.0):
+  - Nimble (2.0.0-rc.3)
+  - Nimble-Snapshots (1.0.0):
     - FBSnapshotTestCase (~> 1.7)
-    - Nimble (~> 0.4)
-    - Quick (~> 0.3)
-  - Quick (0.3.1)
+    - Nimble (~> 2.0.0-rc.2)
+    - Quick (~> 0.5)
+  - Quick (0.6.0)
 
 DEPENDENCIES:
   - ECLibrary (from `../`)
   - FBSnapshotTestCase
   - Nimble
   - Nimble-Snapshots
-  - Quick (~> 0.3.1)
+  - Quick
 
 EXTERNAL SOURCES:
   ECLibrary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ECLibrary: 31e0eeb56d513e6194f953842b4d9faf83984fe4
+  ECLibrary: 48fdafddf6f675de42be40e9c046b7eea85af737
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
-  Nimble-Snapshots: 216ae8c0ea3f4105be1606749fe15d8b2138af40
-  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
+  Nimble: 9dff98ee195ffe7351d3b2fb01d3a1420fd97948
+  Nimble-Snapshots: c16dd279a4840ec06288198fafd53f3c17750ff3
+  Quick: 563686dbcf0ae0f9f7401ac9cd2d786ee1b7f3d7
 
-COCOAPODS: 0.38.0
+COCOAPODS: 0.38.2

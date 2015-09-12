@@ -1,0 +1,1 @@
+ECLIBRARY_OTHER_LDFLAGS = -framework "QuartzCore" -framework "UIKit"

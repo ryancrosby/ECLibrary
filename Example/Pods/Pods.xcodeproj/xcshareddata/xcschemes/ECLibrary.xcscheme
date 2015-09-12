@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFD8403D643E26F791E4F015"
+               BlueprintIdentifier = "40115F0C51754D6F3BB591F6"
                BuildableName = "ECLibrary.framework"
                BlueprintName = "ECLibrary"
                ReferencedContainer = "container:Pods.xcodeproj">
