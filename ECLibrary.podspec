@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ECLibrary"
-  s.version          = "0.2.beta"
+  s.version          = "0.2.beta2"
   s.summary          = "A short description of ECLibrary."
   s.description      = <<-DESC
                        A grab bag of utility function, classes, structs, etc.... that
