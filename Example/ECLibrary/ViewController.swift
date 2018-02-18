@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ECLibrary
 //
-//  Created by Ryan Crosby on 07/24/2015.
-//  Copyright (c) 2015 Ryan Crosby. All rights reserved.
+//  Created by Ryan Crosby on 02/18/2018.
+//  Copyright (c) 2018 Ryan Crosby. All rights reserved.
 //
 
 import UIKit

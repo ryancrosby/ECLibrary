@@ -1,29 +1,36 @@
 PODS:
-  - ECLibrary (0.2.beta)
-  - FBSnapshotTestCase (1.8.1)
-  - Nimble (2.0.0-rc.3)
-  - Nimble-Snapshots (1.0.0):
-    - FBSnapshotTestCase (~> 1.7)
-    - Nimble (~> 2.0.0-rc.2)
-    - Quick (~> 0.5)
-  - Quick (0.6.0)
+  - ECLibrary (0.4.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Nimble (7.0.3)
+  - Nimble-Snapshots (6.3.0):
+    - Nimble-Snapshots/Core (= 6.3.0)
+  - Nimble-Snapshots/Core (6.3.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble (~> 7.0)
+  - Quick (1.2.0)
 
 DEPENDENCIES:
   - ECLibrary (from `../`)
-  - FBSnapshotTestCase
-  - Nimble
-  - Nimble-Snapshots
-  - Quick
+  - FBSnapshotTestCase (~> 2.1.4)
+  - Nimble (~> 7.0.2)
+  - Nimble-Snapshots (~> 6.3.0)
+  - Quick (~> 1.2.0)
 
 EXTERNAL SOURCES:
   ECLibrary:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  ECLibrary: 48fdafddf6f675de42be40e9c046b7eea85af737
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  Nimble: 9dff98ee195ffe7351d3b2fb01d3a1420fd97948
-  Nimble-Snapshots: c16dd279a4840ec06288198fafd53f3c17750ff3
-  Quick: 563686dbcf0ae0f9f7401ac9cd2d786ee1b7f3d7
+  ECLibrary: 5d222377065dcb191f2d8f70a67596f038477606
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: fdb45b164f3ffc697e7ea702de76eb604eddc57e
+
+COCOAPODS: 1.4.0

@@ -1,25 +1,22 @@
 {
   "name": "ECLibrary",
-  "version": "0.2.beta",
+  "version": "0.4.0",
   "summary": "A short description of ECLibrary.",
-  "description": "A grab bag of utility function, classes, structs, etc.... that\nare helpful in day to day development. Currently includes the\nthe following, and some other tools.\n\n* Logger tool",
+  "description": "Collection of objects, extensions, and extras that aid in development.",
   "homepage": "https://github.com/ryancrosby/ECLibrary",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Ryan Crosby": "ryan.s.crosby@gmail.com"
   },
   "source": {
     "git": "https://github.com/ryancrosby/ECLibrary.git",
-    "tag": "0.2.beta"
+    "tag": "0.4.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h",
-  "frameworks": [
-    "UIKit",
-    "QuartzCore"
-  ]
+  "source_files": "ECLibrary/Classes/**/*"
 }

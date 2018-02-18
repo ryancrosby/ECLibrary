@@ -1,11 +1,11 @@
 # ECLibrary
 
-[![CI Status](http://img.shields.io/travis/Ryan Crosby/ECLibrary.svg?style=flat)](https://travis-ci.org/Ryan Crosby/ECLibrary)
+[![CI Status](http://img.shields.io/travis/ryancrosby/ECLibrary.svg?style=flat)](https://travis-ci.org/ryancrosby/ECLibrary)
 [![Version](https://img.shields.io/cocoapods/v/ECLibrary.svg?style=flat)](http://cocoapods.org/pods/ECLibrary)
 [![License](https://img.shields.io/cocoapods/l/ECLibrary.svg?style=flat)](http://cocoapods.org/pods/ECLibrary)
 [![Platform](https://img.shields.io/cocoapods/p/ECLibrary.svg?style=flat)](http://cocoapods.org/pods/ECLibrary)
 
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -17,7 +17,7 @@ ECLibrary is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "ECLibrary"
+pod 'ECLibrary'
 ```
 
 ## Author
