@@ -1,3 +1,7 @@
+/*
+ Plugins: 
+ https://github.com/jenkinsci/ansicolor-plugin
+*/
 pipeline {
   agent any
 
@@ -6,6 +10,8 @@ pipeline {
     LANG        = "en_US.UTF-8"
     LANGUAGE    = "en_US.UTF-8"
     LC_ALL      = "en_US.UTF-8"
+    FASTLANE_SKIP_UPDATE_CHECK    = 1
+    FASTLANE_HIDE_TIMESTAMP       = 1
   }
 
   stages {
@@ -26,10 +32,12 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh '''
-          eval "$(rbenv init -)"
-          bundle exec fastlane test
-        '''
+        ansiColor('xterm') {
+          sh '''
+            eval "$(rbenv init -)"
+            bundle exec fastlane test
+          '''
+        }
       }
       post {
         always {
