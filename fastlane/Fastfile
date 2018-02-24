@@ -1,0 +1,23 @@
+# Global Variables
+#
+
+podName = 'ECLibrary'
+
+
+projectDir = 'Example'
+podWorkspace = projectDir + '/' + podName + '.xcworkspace'
+podProject = projectDir + '/' + podName + '.xcodeproj'
+podScheme = podName + '-Example'
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :test do
+    run_tests(
+      workspace: podWorkspace,
+      scheme: podScheme,
+      device: 'iPhone 8'
+    )
+  end
+end
