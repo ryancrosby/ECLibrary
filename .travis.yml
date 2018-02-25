@@ -12,5 +12,4 @@ before_install:
   - bundle install
   
 script:
-  - fastlane test
-  - pod lib lint
+  - fastlane travis_ci

@@ -1,8 +1,6 @@
 # Global Variables
 #
-
 podName = 'ECLibrary'
-
 
 projectDir = 'Example'
 podWorkspace = projectDir + '/' + podName + '.xcworkspace'
@@ -19,5 +17,51 @@ platform :ios do
       scheme: podScheme,
       device: 'iPhone 8'
     )
+  end
+
+  desc "Verify pod lib"
+  lane :verify_pod do
+    pod_lib_lint
+  end
+
+  desc "Travis CI Job"
+  lane :travis_ci do
+    test
+    verify_pod
+    release(bump_type: "patch") unless git_branch = "master"
+  end
+
+  desc "Increment the version of the pod"
+  lane :release do |options|
+    ensure_git_status_clean
+    ensure_git_branch
+    current_version = version_get_podspec()
+
+    if git_tag_exists(tag: current_version)
+      new_version = increment_version(bump_type: options[:bump_type])
+      UI.message "Version updated from #{current_version} to #{new_version}"
+    else
+      new_version = current_version
+      UI.message "Using #{current_version} as new version since no tag was found"
+    end
+
+    new_version = version_get_podspec()
+
+    git_commit(path: ".", message: "Bump to #{new_version}")
+    add_git_tag(tag: "#{new_version}")
+    push_to_git_remote(force: false, tags: true)
+    #pod_push(allow_warnings: true, verbose: true)
+  end
+
+  desc "Increments pod version"
+  desc "bump_type is a required parameter"
+  desc "major/minor/patch are the only valid values"
+  private_lane :increment_version do |options|
+    case options[:bump_type]
+    when "major", "minor", "patch"
+      version_bump_podspec(bump_type: options[:bump_type]) 
+    else
+      UI.error "Invalid bump_type specified, please specify major/minor/patch"
+    end
   end
 end

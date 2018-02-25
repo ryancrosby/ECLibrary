@@ -21,6 +21,16 @@ or alternatively using `brew cask install fastlane`
 fastlane ios test
 ```
 Description of what the lane does
+### ios verify_pod
+```
+fastlane ios verify_pod
+```
+Verify pod lib
+### ios release
+```
+fastlane ios release
+```
+Increment the version of the pod
 
 ----
 
