@@ -26,7 +26,7 @@ pipeline {
       steps {
         sh '''
           eval "$(rbenv init -)"
-          bundle exec pod lib lint
+          bundle exec fastlane verify_pod
         '''
       }
     }

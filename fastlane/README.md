@@ -26,6 +26,11 @@ Description of what the lane does
 fastlane ios verify_pod
 ```
 Verify pod lib
+### ios travis_ci
+```
+fastlane ios travis_ci
+```
+Travis CI Job
 ### ios release
 ```
 fastlane ios release

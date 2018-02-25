@@ -28,7 +28,7 @@ platform :ios do
   lane :travis_ci do
     test
     verify_pod
-    release(bump_type: "patch") unless git_branch = "master"
+    release(bump_type: "patch") unless git_branch != "master"
   end
 
   desc "Increment the version of the pod"
