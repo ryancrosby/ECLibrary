@@ -36,15 +36,6 @@ Travis CI Job
 fastlane ios release
 ```
 Increment the version of the pod
-### ios increment_version
-```
-fastlane ios increment_version
-```
-Increments pod version
-
-bump_type is a required parameter
-
-major/minor/patch are the only valid values
 
 ----
 
