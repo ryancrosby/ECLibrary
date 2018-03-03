@@ -15,11 +15,9 @@ pipeline {
   }
 
   stages {
-   stage('Prepare') {
+   stage('Install Dependencies') {
       steps {
         sh 'bundle install'
-        /* ignore errors from rm */
-        sh 'rm -r fastlane/test_output || true'
       }
     }
     stage('lint') {
