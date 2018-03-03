@@ -45,6 +45,17 @@ pipeline {
         }
       }
     }
+    stage('tag release') {
+      when {
+        branch 'master'
+      }
+      steps {
+          sh '''
+            eval "$(rbenv init -)"
+            bundle exec fastlane release bump_type:patch
+          '''
+      }
+    }
   }
 }
 
