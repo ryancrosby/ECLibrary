@@ -5,4 +5,8 @@ public struct Logger {
     public func debugLog(message: String) {
         print(message)
     }
+    
+    public func errorLog(message: String) {
+        print(message)
+    }
 }
