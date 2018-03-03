@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ECLibrary'
-  s.version          = '0.4.9'
+  s.version          = '0.4.10'
   s.summary          = 'Collection of utilities to speed up development of iOS apps.'
 
   s.description      = <<-DESC

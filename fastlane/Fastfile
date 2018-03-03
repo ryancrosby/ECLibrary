@@ -6,6 +6,7 @@ projectDir = 'Example'
 podWorkspace = projectDir + '/' + podName + '.xcworkspace'
 podProject = projectDir + '/' + podName + '.xcodeproj'
 podScheme = podName + '-Example'
+podSpec = podName + '.podspec'
 
 default_platform(:ios)
 
@@ -46,6 +47,7 @@ platform :ios do
 
     new_version = version_get_podspec()
 
+    git_add(path: podSpec)
     git_commit(path: ".", message: "Bump to #{new_version}")
     add_git_tag(tag: "#{new_version}")
     push_to_git_remote(force: false, tags: true)
