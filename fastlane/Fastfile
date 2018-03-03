@@ -40,6 +40,8 @@ platform :ios do
     if git_tag_exists(tag: current_version)
       new_version = increment_version(bump_type: options[:bump_type])
       UI.message "Version updated from #{current_version} to #{new_version}"
+      git_add(path: podSpec)
+      git_commit(path: ".", message: "Bump to #{new_version}")
     else
       new_version = current_version
       UI.message "Using #{current_version} as new version since no tag was found"
@@ -47,8 +49,6 @@ platform :ios do
 
     new_version = version_get_podspec()
 
-    git_add(path: podSpec)
-    git_commit(path: ".", message: "Bump to #{new_version}")
     add_git_tag(tag: "#{new_version}")
     push_to_git_remote(force: false, tags: true)
     #pod_push(allow_warnings: true, verbose: true)
